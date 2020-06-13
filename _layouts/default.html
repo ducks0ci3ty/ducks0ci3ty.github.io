@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Ducks0ci3ty</title>
+    <link rel="icon" href="/assets/images/icon.png" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="apple-touch-icon" href="/assets/images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="author" content="et3rnos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/">
+                <img src="/assets/images/logo.png" class="logo" alt="Ducks0ci3ty">
+            </a>
+            <a href="javascript:void(0);" onclick="ToogleMenu()">
+                <img class="menu-expander" src="/assets/images/menu_ham.png" alt="Menu">
+            </a>
+            <div class="menu-container">
+                <a class="menu a" href="/members">Members</a>
+                <a class="menu b" href="/posts">Posts</a>
+                <a class="menu a" href="/discover">Discover</a>
+            </div>
+        </div>
+    </header>
+    <div class="body-container">
+        {{ content }}
+    </div>
+</body>
+<div class="news-container">
+    <h2>Featured Content</h2>
+    <a href="/" class="news-left">
+        <img class="news-img" align="left" src="/assets/images/touhou.png" alt="TouHou Simulator">
+        <div class="news-content">
+            <h3 class="news-title">TouHou Simulator</h3>
+            <p class="content-description">Touhou Simulator! A shooter game where you must defend yourself from the bullets throwned by the enemy.</p>
+        </div>
+    </a>
+    <a href="/" class="news-right">
+        <img class="news-img" align="left" src="/assets/images/minereview_small.png" alt="Minecraft Review">
+        <div class="news-content">
+            <h3 class="news-title">Minecraft Review</h3>
+            <p class="content-description">Curious about the game Minecraft? Don't know if you should buy it? We'll answer your questions with this review!</p>
+        </div>
+    </a>
+    <a href="/articles/minecraftserver" class="news-left">
+        <img class="news-img" align="left" src="/assets/images/mineserver_small.png" alt="Minecraft Server">
+        <div class="news-content">
+            <h3 class="news-title">Minecraft Server</h3>
+            <p class="content-description">Enter our Minecraft Server with reserved slots and with just 1 rule. We allow cracked players to join!
+            </p>
+        </div>
+    </a>
+    <a href="/" class="news-right">
+        <img class="news-img" align="left" src="/assets/images/r6s_small.png" alt="Rainbow Six Siege Review">
+        <div class="news-content">
+            <h3 class="news-title">Rainbow Six Siege Review</h3>
+            <p class="content-description">Discover why is this game so popular and if it is a game that you must play. Check our review!</p>
+        </div>
+    </a>
+</div>
+</html>
