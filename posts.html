@@ -1,24 +1,18 @@
 ---
 layout: default
 permalink: /posts
+title: Posts
 ---
 <h1 class="title">Posts</h1>
 <p class="main-description center">Take a look at our newest posts.</p>
 <div class="articles-container">
-    <a href="/articles/minecraftreview" class="article">
-        <img class="article-image" align="left" src="/assets/images/minereview.png">
+    {% for post in site.posts %}
+    <a href="{{post.url}}" class="article">
+        <img class="article-image" align="left" src="{{post.image-path}}">
         <div class="article-content">
-            <h3 class="article-title">Minecraft Review</h3>
-            <p class="article-text">Curious about the game Minecraft? Don't know if you should buy it? We'll
-                answer your questions with this review!</p>
+            <h3 class="article-title">{{post.title}}</h3>
+            <p class="article-text">{{post.excerpt}}</p>
         </div>
     </a>
-    <a href="/articles/minecraftserver" class="article">
-        <img class="article-image" align="left" src="/assets/images/mineserver.png">
-        <div class="article-content">
-            <h3 class="article-title">Minecraft Server</h3>
-            <p class="article-text">Enter our Minecraft Server with reserved slots and with just 1 rule. We
-                allow cracked players to join!</p>
-        </div>
-    </a>
+    {% endfor %}
 </div>
