@@ -24,7 +24,7 @@ window.onresize = window.onload = function() {
             document.getElementsByClassName("menu-container")[0].style.display = "none";
         }
     }
-    if (width > 400) {
+    if (width > 450) {
         document.getElementsByClassName("logo")[0].src = "/assets/images/logo.png";
     } else {
         document.getElementsByClassName("logo")[0].src = "/assets/images/logo_small.png";
