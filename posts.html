@@ -7,7 +7,11 @@ title: Posts
 <p class="main-description center">Take a look at our newest posts.</p>
 <div class="articles-container">
     {% for post in site.posts %}
+    {% if post.href %}
+    <a href="{{post.href}}" target="_blank" class="article">
+    {% else %}
     <a href="{{post.url}}" class="article">
+    {% endif %}
         <img class="article-image" align="left" src="{{post.image-path}}">
         <div class="article-content">
             <h3 class="article-title">{{post.title}}</h3>
